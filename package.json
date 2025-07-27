@@ -4,10 +4,11 @@
   "private": true,
   "type": "module",
 "scripts": {
-  "build": "vue-cli-service build",
-  "deploy": "gh-pages -d dist"
-}
-,
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "npm run build && gh-pages -d dist"
+},
   "dependencies": {
     "bootstrap": "^4.6.2",
     "pinia": "^3.0.3",
